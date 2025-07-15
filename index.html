@@ -2,82 +2,221 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Md. Jamil Khan - Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Jamil Khan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #fff; color: #333; }
+    header, section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+    nav a { text-decoration: none; margin-left: 20px; color: #333; font-weight: 600; }
+    .hero { text-align: center; background: #f3f9ff; padding: 100px 20px; }
+    .hero h1 { font-size: 48px; margin-bottom: 20px; }
+    .hero p { font-size: 18px; margin-bottom: 30px; }
+    .hero a { padding: 12px 24px; background: #007bff; color: white; border-radius: 5px; text-decoration: none; }
+    .section-title { font-size: 32px; margin-bottom: 30px; border-left: 5px solid #007bff; padding-left: 10px; }
+    ul { list-style: none; padding-left: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    ul li {
+      margin-bottom: 15px;
+      padding: 20px;
+      background-image: linear-gradient(135deg, #fceabb, #f8b500);
+      color: #000;
+      border-left: 5px solid #007bff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    ul li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      background-image: linear-gradient(135deg, #ffe0ac, #ffb347);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;
+    }
+    .contact-form button {
+      padding: 12px 24px; background: #007bff; color: white; border: none; border-radius: 5px;
+    }
+    footer { text-align: center; padding: 20px; background: #f3f9ff; }
+    .photo { width: 180px; border-radius: 50%; margin-top: 20px; }
+    .resume-card {
+      margin-top: 40px;
+      text-align: center;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 30px;
+      border-radius: 12px;
+      color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .resume-card a {
+      color: white;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Md. Jamil Khan</h1>
-    <p>Data Scientist & AI Developer</p>
-    <nav>
+  <nav>
+    <div><strong>Md. Jamil Khan</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
+      <a href="#certificates">Certificates</a>
       <a href="#contact">Contact</a>
-      <a href="Jamil__Resume_.pdf" target="_blank">Resume</a>
-    </nav>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1 style="font-size: 56px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; letter-spacing: 2px; color: #003366; text-transform: uppercase; font-weight: 900;">MD. JAMIL KHAN</h1>
+    <h1>Junior Data Scientist | AI Developer </h1>
+    <a href="#projects">View My Work</a>
   </header>
 
   <section id="about">
-    <h2>About Me</h2>
-    <p>
-       I am a Data Scientist & AI Developer with strong hands-on experience in building real-world machine learning and deep learning models, supported by academic research and impactful projects. My background spans predictive modeling, natural language processing (NLP), computer vision, image processing, and data analysis, with proficiency in tools and languages such as Python, SQL, TensorFlow, and Scikit-Learn. I’ve developed and deployed AI solutions across various domains, particularly in healthcare and sentiment analysis, where I combined deep technical knowledge with innovative thinking. I’ve also contributed to a Q2 Scopus-indexed journal publication, and I am committed to applying AI in ways that are both technically rigorous and socially meaningful.
-    </p>
+  <h2 class="section-title">About Me</h2>
+  <p style="margin-bottom: 20px;">Motivated and results-driven Junior Data Scientist and AI Developer with a strong academic background and
+published research in artificial intelligence. Committed to leveraging advanced analytical techniques, machine
+learning, and deep learning methodologies to solve complex real-world challenges. Seeking a dynamic and
+growth-oriented position where I can contribute to impactful projects, collaborate with cross-functional teams,
+and continuously advance my expertise in cutting-edge technologies.
+</p>
+  <ul style="list-style: none; padding: 0; margin-top: 30px;">
+    <li style="margin-bottom: 10px;"><img src="https://img.icons8.com/ios-filled/20/007bff/phone.png" alt="Phone Icon" /> <strong>Phone:</strong> 01760413449</li>
+    <li style="margin-bottom: 10px;"><img src="https://img.icons8.com/ios-filled/20/007bff/new-post.png" alt="Email Icon" /> <strong>Email:</strong> <a href="mailto:jamil.mu.cse@gmail.com">jamil.mu.cse@gmail.com</a></li>
+    <li style="margin-bottom: 10px;"><img src="https://img.icons8.com/ios-filled/20/007bff/github.png" alt="GitHub Icon" /> <strong>GitHub:</strong> <a href="https://github.com/jamilEmon">github.com/jamilEmon</a></li>
+    <li style="margin-bottom: 10px;"><img src="https://img.icons8.com/ios-filled/20/007bff/linkedin.png" alt="LinkedIn Icon" /> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mdjamilkhan">linkedin.com/in/mdjamilkhan</a></li>
+    <li style="margin-bottom: 10px;"><img src="https://img.icons8.com/ios-filled/20/007bff/domain.png" alt="Portfolio Icon" /> <strong>Portfolio:</strong> <a href="https://jamilemon.github.io">jamilemon.github.io</a></li>
+    <li><img src="https://img.icons8.com/ios-filled/20/007bff/marker.png" alt="Location Icon" /> <strong>Location:</strong> Dhaka, Bangladesh</li>
+  </ul>
+</section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, SQL, R, C++, JAVA, LaTeX</li>
+      <li><strong>ML Tools:</strong> Pandas, Numpy, Scikit-learn, TensorFlow, Matplotlib</li>
+      <li><strong>Design Tools:</strong> Illustrator, Photoshop, Figma</li>
+      <li><strong>Soft Skills:</strong> Rapport Building, Communication, Stakeholder Management, Teamwork</li>
+      <li><strong>Tools:</strong> Power BI, MS Word, Excel, PowerPoint, OneNote</li>
+      <li><strong>Platforms:</strong> Jupyter, VS Code, PyCharm, Retool, IntelliJ</li>
+    </ul>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>Heart Disease Prediction</strong> – <a href="https://github.com/jamilEmon/Heart-Disease-Prediction-Using-ML-and-Deep-Learning" target="_blank">GitHub</a><br/>
-        Developed a heart disease prediction model using RF, XGBoost, CatBoost, SVM, and 1D CNN. Achieved 96.36% accuracy with 1D CNN by applying advanced feature engineering and PCA. Boosted model performance by 7% through interaction-driven feature analysis and identified key health risk indicators.
-      </li>
-      <li>
-        <strong>Hybrid Deep Ensemble for Sentiment Analysis</strong> – <a href="https://github.com/jamilEmon/Hybrid-Deep-Ensemble-for-Sentiment-Analysis" target="_blank">GitHub</a><br/>
-        Built a hybrid sentiment analysis model combining BERT-based augmentation, transformer embeddings, ensemble learners, and a CNN-BiGRU-Attention network. Achieved 91.15% accuracy on Amazon reviews using stacking and Optuna-based hyperparameter tuning.
-      </li>
-      <li>
-        <strong>Brain Tumor Classification</strong> – <a href="https://github.com/jamilEmon/Brain-Tumor-Classification-using-Deep-Learning" target="_blank">GitHub</a><br/>
-        Developed a CNN pipeline leveraging transfer learning with VGG16, ResNet50, InceptionV3, and EfficientNetB0. Applied advanced image augmentation using Albumentations and achieved 97% accuracy through a stacking ensemble with logistic regression.
-      </li>
-      <li>
-        <strong>Airbnb-price-prediction</strong> – <a href="https://github.com/jamilEmon/Airbnb-price-prediction" target="_blank">GitHub</a><br/>
-        This project builds a powerful Airbnb price prediction model using deep learning (Keras ANN) and ensemble methods like XGBoost, CatBoost, and Gradient Boosting. Strong feature engineering, log transformation, and a stacking ensemble achieved high accuracy with an R² up to 0.999.
-      </li>
-    </ul>
-  </section>
+  <h2 class="section-title">Projects</h2>
+  <ul>
+    <li>
+      <strong>Heart Disease Prediction Using ML and DL (Nov 2024 – Mar 2025)</strong><br>
+      <a href="https://github.com/jamilEmon/Heart-Disease-Prediction-Using-ML-and-Deep-Learning">GitHub Link</a><br>
+      • Developed a model using RF, XGBoost, CatBoost, SVM, and 1D CNN.<br>
+      • Achieved 96.36% accuracy with 1D CNN through feature engineering and PCA.<br>
+      • Improved performance by 7% via interaction-focused analysis.<br>
+      • Identified key indicators for diagnosis support.
+    </li>
+    <li>
+      <strong>Brain Tumor Classification Using DL (Feb 2025 – Mar 2025)</strong><br>
+      <a href="https://github.com/jamilEmon/Brain-Tumor-Classification-using-Deep-Learning">GitHub Link</a><br>
+      • Built CNN pipeline using VGG16, ResNet50, InceptionV3, EfficientNetB0.<br>
+      • Used Albumentations for advanced augmentation.<br>
+      • Achieved 97% accuracy using stacking with logistic regression.
+    </li>
+    <li>
+      <strong>Hybrid Deep Ensemble for Sentiment Analysis (Sep 2024 – Jan 2025)</strong><br>
+      <a href="https://github.com/jamilEmon">GitHub Link</a><br>
+      • Built hybrid model with BERT, transformer embeddings, CNN-BiGRU-Attention.<br>
+      • Achieved 91.15% accuracy on Amazon reviews using Optuna tuning.
+    </li>
+    <li>
+      <strong>Attendance Management System (Feb 2023)</strong><br>
+      Laravel, MySQL, HTML/CSS/JS<br>
+      • Built a student attendance tracking app for university.
+    </li>
+    <li>
+      <strong>Diabetes Prediction Using ML and DL (Jan 2025)</strong><br>
+      <a href="https://github.com/jamilEmon/diabetes_binary_health">GitHub Link</a><br>
+      • Used XGBoost, Random Forest with advanced feature engineering.<br>
+      • Used log transformation, PCA, and scaling for performance.<br>
+      • Achieved high accuracy and interpretability.
+    </li>
+    <li>
+      <strong>Airbnb Price Prediction (Jan 2025)</strong><br>
+      <a href="https://github.com/jamilEmon/Airbnb-price-prediction">GitHub Link</a><br>
+      • Built deep learning model (Keras ANN) with XGBoost, CatBoost, and GB.<br>
+      • Feature engineered, log transformed, stacked ensemble R² ≈ 0.999.
+    </li>
+  </ul>
+</section>
 
   <section id="publications">
-    <h2>Publications</h2>
-    <ul>
-      <li>
-        <strong>Machine Learning for Heart Disease</strong> – <a href="https://www.techscience.com/cmc/online/detail/22560" target="_blank">View Paper</a><br/>
-         Md.Jamil Khan, Ruhul Amin, Tonway deb Nath, Md.Shamim Reza, Jungpil Shin, ”Harmonization of Heart Disease Dataset for Accurate Diagnosis: A Machine Learning Approach
- Enhanced by Feature Engineering.”CMC-Computers Materials and Continua.(Q2, SCI, and Scopus, IF=2.1) Accepted
-      </li>
-      <li>
-        <strong>Learn C Programming: Part One</strong> – <a href="https://www.elivapress.com/en/book/book-5799919985/" target="_blank">Book Link</a><br/>
-        Md. Jamil Khan. Learn C Programming: Part One. Eliva Press. ISBN: 978-9994983711. An introductory programming book designed to help beginners understand the fundamentals of C
- programming through clear explanations and practical examples. Authored and self-published to support students and early learners in computer science.
-      </li>
-    </ul>
+  <h2 class="section-title">Publications</h2>
+  <ul>
+    <li>
+      <strong>Learn C Programming: Part One (May 2023)</strong><br>
+      <a href="https://www.elivapress.com/en/book/book-5799919985/">Book Link</a><br>
+      • An introductory book to help beginners learn C programming clearly.<br>
+      • Published with Eliva Press. ISBN: 978-9994983711.
+    </li>
+    <li>
+      <strong>Heart Disease ML Paper (Nov 2024)</strong><br>
+      <a href="https://www.techscience.com/cmc/online/detail/22560">Research Paper Link</a><br>
+      • "Harmonization of Heart Disease Dataset for Accurate Diagnosis."<br>
+      • Published in CMC (Q2, SCI, Scopus). IF = 2.1.
+    </li>
+  </ul>
+</section>
+
+  <section id="certificates">
+  <h2 class="section-title">Certificates</h2>
+  <ul>
+    <li>
+      <strong>IBM SkillsBuild: Python 101 for Data Science (July 2025)</strong><br>
+      <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/a7169577c967401fbfff26f870213d0d">Certificate Link</a><br>
+      • Covered Python basics, loops, functions, libraries for DS.
+    </li>
+    <li>
+      <strong>IBM SkillsBuild: Data Analysis with Python (July 2025)</strong><br>
+      <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/426c64654a6349f8aec6cee637f7d67a">Certificate Link</a><br>
+      • Learned wrangling, analysis, viz using Pandas, NumPy, Matplotlib.
+    </li>
+    <li>
+      <strong>IBM SkillsBuild: Machine Learning with Python (July 2025)</strong><br>
+      <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/7d4639c098f743a1a7e21f838b00683d">Certificate Link</a><br>
+      • Supervised & unsupervised learning, clustering, evaluation.
+    </li>
+    <li>
+      <strong>HP LIFE Certificate in Data Science and Analytics (July 2025)</strong><br>
+      <a href="https://github.com/jamilEmon/jamilEmon.github.io/blob/main/certificate.pdf">Certificate Link</a><br>
+      • Learned DS tools, methodologies, and business impact.
+    </li>
+    <li>
+      <strong>HackerRank: Advanced SQL Certified (July 2025)</strong><br>
+      <a href="https://www.hackerrank.com/certificates/iframe/48002dd409df">Certificate Link</a><br>
+      • Validated complex query handling and DB expertise.
+    </li>
+  </ul>
+</section>
+
+  <section class="resume-card">
+    <h2>📄 My CV</h2>
+    <p><a href="https://github.com/jamilEmon/jamil_portfolio-test/blob/main/Md__Jamil_Khan_CV_.pdf" download>Click here to download it now!</a></p>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jamil.mu.cse@gmail.com">jamil.mu.cse@gmail.com</a></p>
-    <p>Phone: +8801760413449</p>
-    <p>
-      <a href="https://www.linkedin.com/in/mdjamilkhan" target="_blank">LinkedIn</a> |
-      <a href="https://github.com/jamilEmon" target="_blank">GitHub</a>
-      <a href="https://scholar.google.com/citations?user=qacvSA8AAAAJ&hl=en" target="_blank">Google Scholar</a>
-    </p>
-  </section>
+  <h2 class="section-title">Let’s Collaborate on Your Next Project!</h2>
+  <form class="contact-form" action="https://formsubmit.co/jamil.mu.cse@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
   <footer>
-    <p>&copy; 2025 Md. Jamil Khan</p>
+    &copy; 2025 Md. Jamil Khan.
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
